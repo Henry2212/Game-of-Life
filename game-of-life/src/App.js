@@ -525,6 +525,13 @@ class App extends React.Component {
       <div className="App">
         <p>Henry Ramirez: Conway's Game of Life</p>
 
+        <h2>Rules:</h2>
+            <p>If the cell is alive and has 2 or 3 neighbors, then it remains
+            alive. Else it dies.</p>
+            <p>If the cell is dead and has exactly 3 neighbors, then it comes to
+            life. Else if remains dead.
+            </p>
+
         <AppWrapper>
           <GameWrapper>
             <p>Generation: {this.state.generation}</p>
